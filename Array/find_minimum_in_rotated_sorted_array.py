@@ -13,6 +13,7 @@ class Solution(object):
     def findMin(self, nums):
         """
         ~ Binary search algorithm
+        - The key here is finding the inflection point: where the array flow is discontinuous.
         1. Find the mid element of the array.
         2. If mid element > first element of array this means that we need to look for the inflection point on the right of mid.
         3. If mid element < first element of array this that we need to look for the inflection point on the left of mid.

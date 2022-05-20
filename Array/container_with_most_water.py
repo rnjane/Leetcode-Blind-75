@@ -12,7 +12,7 @@ class Solution:
     we move the pointers towards each other until the distance between the pointers is 0.
         - all along, we re-compute the area between the two pointers and update max_area if the area is greater than max_area.
     """
-    # more efficient solution
+    # NOTE: MORE EFFICIENT SOLUTION
     def maxArea(self, height) -> int:
         res = 0 
         left = 0 
