@@ -5,7 +5,7 @@ A subarray is a contiguous part of an array.
 """
 class Solution:
     """
-    - we start by initializing the current sum to 0, and takinf the first element of the array as the maximum subarray.
+    - we start by initializing the current sum to 0, and taking the first element of the array as the maximum subarray.
     - we iterate through the array, and for each element:
         - if the current sum is less than 0, we set the current sum to 0(this happens if we encounter a negative number that negates the current sum)
         - we add the current element to the current sum

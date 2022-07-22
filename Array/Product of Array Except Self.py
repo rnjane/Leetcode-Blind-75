@@ -5,9 +5,10 @@ The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit int
 
 You must write an algorithm that runs in O(n) time and without using the division operation.
 """
+from  typing import List
 class Solution:
     """
-    the product of all the elements of nums except nums[i] is equal to the product of all the elements to the right of nums[i] and all the elements to the left of nums[i]
+    the product of all the elements of nums except nums[i] is equal to the product of the product of elements to the right of nums[i] and the product of elements to the left of nums[i]
     - at any point, the product of all the elements to the left of the current element is stored in prefix[i]
     - at any point, the product of all the elements to the right of the current element is stored in postfix[i]
     - the product of all the elements to the left of the current element is multiplied by the product of all the elements to the right of the current element
@@ -40,3 +41,6 @@ class Solution:
             res[i] *= postfix
             postfix *= nums[i]
         return res
+
+sn  = Solution()
+print(sn.productExceptSelf([1,2,3,4]))

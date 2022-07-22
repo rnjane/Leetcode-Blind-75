@@ -8,6 +8,7 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 import math
 class Solution:
     """
+    sliding_window approach
     - profit for each day can be calculated as the difference between the day's price and the minimum price so far.
     - we init min_price to math.inf
     - we loop through all the prices checking if the current price is less than the min_price so far, and if it is,

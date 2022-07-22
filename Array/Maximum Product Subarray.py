@@ -1,7 +1,6 @@
 """
-Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, and return the product.
-
-The test cases are generated so that the answer will fit in a 32-bit integer.
+Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, 
+and return the product.
 
 A subarray is a contiguous subsequence of the array.
 O(n)/O(1) : Time/Memory
@@ -28,7 +27,6 @@ class Solution:
         curMin, curMax = 1, 1
         
         for n in nums:
-            
             tmp = curMax * n
             curMax = max(n * curMax, n * curMin, n) 
             curMin = min(tmp, n * curMin, n)
